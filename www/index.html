@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amber Music</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <p>Amber's Music</p>
+        </div>
+    </header>
+    <div id="playList" >
+
+    </div>
+
+    <div id="bigPlayer" class="hide hidden">
+        <div id="playerHeader">
+            <span>
+                <img id="closePlayer" alt="closePlayer" title="closePlayer" data-src="img/chevron.svg" class="iconic iconic-md" />
+            </span>
+            <span id="vol">
+                <span id="volPlus">
+                        <img src="img/voice.png"><span>+</span>
+                </span>
+                <span id="volMin">
+                        <img src="img/voice.png"><span>-</span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <div id="overlay">
+                <img id="backImg" src="img/musiclogo.png">
+            </div>
+            <p id="playerTitle" class="title"></p>
+            <p id="playerArtist" class="artist"></p>
+        </div>
+        <div id="player">
+            <div id="bar">
+                <p id="startTime">00:00</p>
+                <span class="basebar">
+                    <span class="progressbar"></span>
+                </span>
+                <p id="fullTime">00:00</p>
+            </div>
+            <div id="control">
+                <div class="nextD">
+                    <img id="last" src="img/next.png" alt="">
+                </div>
+                <div class="PPD">
+                    <img class="play" src="img/play1.png" alt="">
+                    <img class="pause hidden" src="img/pause1.png" alt="">
+                </div>
+                <div class="nextD">
+                    <img id="next" src="img/next.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>
+            <img id="openPlayer" alt="openPlayer" title="openPlayer" data-src="img/chevron.svg" class="iconic iconic-md" />
+        </span>
+        <p id="footerTitle"></p>
+        <div class="PPD">
+            <img id="footerPlay" class="play" src="img/play1.png" alt="">
+            <img id="footerPause" class="hidden pause" src="img/pause1.png" alt="">
+        </div>
+    </footer>
+    <script src="cordova.js"></script>
+    <script src="js/iconic.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
