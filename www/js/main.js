@@ -316,7 +316,7 @@ function checkTime() {
                 let length = position / fullTime * 100;
                 document.querySelector('.progressbar').style.width = length + '%';
 
-                if (position == fullTime) {
+                if (position == -0.001) {
                     document.getElementById('next').dispatchEvent(new MouseEvent('click'));
                 }
             },
