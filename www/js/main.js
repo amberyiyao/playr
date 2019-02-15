@@ -1,4 +1,4 @@
-if (document.deviceready) {
+if ("cordova" in window) {
     document.addEventListener("deviceready", init);
 } else {
     document.addEventListener("DOMContentLoaded", init);
